@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>starter template</title>
+</head>
+<!-- TOP BAR-->
+<header class="main-topbar">
+    <div class="max-container">
+        <span class="head-atendimento">
+            <a href="tel:tel:(xx)xxxx-xxxx">Atendimento (xx)xxxx-xxxx</a> 
+            <span class="pipe"> | </span>
+        <a href="tel:tel:(xx)xxxxx-xxxx">WHATSAPP (xx)xxxx-xxxx</a>
+        </span>
+    </div>
+</header>
+
+<!-- MAIN HEAD -->
+<header class="main-head">
+    <div class="max-container">
+        <div class="container-logo">
+            <a href="/"><img src="https://i.ibb.co/StZVfCx/logo-maeztra-novo.png" alt="Logo" class="img-responsive" /></a>
+        </div>
+        <div class="container-search">
+            <vtex.cmc:fullTextSearchBox/>
+        </div>
+        <div class="container-profile-controls">
+            <a href="/account"><img src="/arquivos/profile-img.png" alt="profile" /></a>
+            <button class="toggler-search-mobile">
+                <img src="/arquivos/lupa.png" class="toggler-search" />
+            </button>
+            <a href="" class="toggler-cart">
+                <img src="/arquivos/cart-img.png" alt="carrinho" />
+                <span class="mini-cart-qty-admake">0</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div class="carrinho">
+        <div id="mini-cart-admake-aux" class="hidden">
+            <vtex.cmc:miniCart />
+        </div>
+        <div class="carrinho-header max-container">
+            <span>Meu Carrinho</span>
+            <div class="toggler-cart">
+                <img src="/arquivos/xlogin.png" class="img-responsive" />
+            </div>
+        </div>
+
+        <div class="max-container">
+
+            <div class="mini-cart-itens">
+
+            </div>
+            <div class="cart-inf">
+                <div class="mini-cart-totais">
+
+                    <div class="mini-cart-botao">
+                        <a href="/checkout/#/cart" class="btn btn-block btn-verde btn-finalizar-compra">Finalizar Pedido</a>
+                    </div>
+                </div>
+                <div class='calc-frete'>
+                    <input type='text' class='field-frete' placeholder='calcular frete' />
+                    <input type='submit' class='btn-frete' value="Calcular" />
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+
+
+<!-- NAVBAR -->
+<nav class="menu-container">
+    <div class="max-container">
+        <section class="all-menu-container">
+            <div class="all-title js-toggle-menu">
+                <div class="btn-menu">
+                    <span class="line line-1"></span>
+                    <span class="line line-2"></span>
+                    <span class="line line-3"></span>
+                </div>
+                <p>MAIS CATEGORIAS</p>
+            </div>
+            <ul class="all-menu">
+                <div class="max-container"></div>
+            </ul>
+        </section>
+        <ul class="main-menu">
+        </ul>
+        <div></div>
+    </div>
+</nav>
+
+<div class="box-shadow menu-toggler"></div>
+
+<body>
+    <h1>teste</h1>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.js"></script>
+</body>
+
+</html>
