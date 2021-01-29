@@ -4,6 +4,156 @@
     margin: 0 auto
 }
 
+body {
+    font-family: Titillium Web;
+}
+
+
+/*TOPBAR*/
+
+.main-topbar {
+    background: #353535;
+    span {
+        color: white;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 12px;
+        line-height: 24px
+    }
+}
+
+
+/*header*/
+
+header {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.main-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-logo {
+    padding: 35px 0;
+    box-sizing: border-box;
+    margin-right: 117px;
+    img {}
+}
+
+.search {
+    width: 100%;
+    max-width: 791px;
+    position: relative;
+    input {
+        border: none;
+        border-radius: 10px;
+        width: 100%;
+        background: #EFEFEF;
+        line-height: 40px;
+        padding: 0 202px 0 24px;
+    }
+    button {
+        position: absolute;
+        right: 0;
+        width: 100%;
+        max-width: 119px;
+        background: #FAA500;
+        border: none;
+        border-radius: 8px;
+        height: 40px;
+        color: white;
+        font-size: 14px
+    }
+}
+
+.container-profile {
+    margin-left: 143px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 428px;
+    a {
+        margin-right: 39px;
+        line-height: 21px;
+        span {
+            color: #353535;
+            font-size: 14px;
+        }
+        img {
+            margin-right: 8px
+        }
+    }
+    .carrinho {
+        padding: 12px;
+        border: 1px solid #FAA500;
+        box-sizing: border-box;
+        margin-right: 0;
+        border-radius: 8px
+    }
+}
+
+.menu {
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 225px;
+        li {
+            width: 100%;
+            max-width: 146px;
+            text-align: center;
+        }
+    }
+    a {
+        cursor: pointer;
+        color: #353535;
+        font-size: 14px;
+        transition: 0.3s;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: relative;
+        &:hover {
+            color: #FAA500;
+            font-weight: 700;
+            text-decoration: none;
+        }
+        &:hover:before {
+            content: "";
+            display: block;
+            background-image: url(../img/btnicon.png);
+            width: 15px;
+            height: 17px;
+            background-repeat: no-repeat;
+            position: absolute;
+            left: 16px;
+            top: 50%;
+            transform: translatey(-50%);
+        }
+    }
+}
+
+
+/*fullbanner*/
+
+.banner {
+    img {
+        width: 100%;
+        height: auto;
+        max-width: 1920px;
+    }
+}
+
+figure {
+    margin: 0!important;
+}
+
 
 /*
 $my-color-1: #00A1FF;
