@@ -1,193 +1,10 @@
-.max-container {
-  width: 85%;
-  max-width: 1600px;
-  margin: 0 auto; }
-
-body {
-  font-family: Titillium Web; }
-
-/*TOPBAR*/
-.main-topbar {
-  background: #353535; }
-  .main-topbar span {
-    color: white;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 12px;
-    line-height: 24px; }
-
-/*header*/
-header {
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08); }
-
-.main-head {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center; }
-
-.container-logo {
-  padding: 35px 0;
-  box-sizing: border-box;
-  margin-right: 117px; }
-
-.search {
-  width: 100%;
-  max-width: 791px;
-  position: relative; }
-  .search input {
-    border: none;
-    border-radius: 10px;
-    width: 100%;
-    background: #EFEFEF;
-    line-height: 40px;
-    padding: 0 202px 0 24px; }
-  .search button {
-    position: absolute;
-    right: 0;
-    width: 100%;
-    max-width: 119px;
-    background: #FAA500;
-    border: none;
-    border-radius: 8px;
-    height: 40px;
-    color: white;
-    font-size: 14px; }
-
-.container-profile {
-  margin-left: 143px;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: 428px; }
-  .container-profile a {
-    margin-right: 39px;
-    line-height: 21px; }
-    .container-profile a span {
-      color: #353535;
-      font-size: 14px; }
-    .container-profile a img {
-      margin-right: 8px; }
-  .container-profile .carrinho {
-    padding: 12px;
-    border: 1px solid #FAA500;
-    box-sizing: border-box;
-    margin-right: 0;
-    border-radius: 8px; }
-
-.menu ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 14px 225px;
-  margin-bottom: 0; }
-  .menu ul li {
-    width: 100%;
-    max-width: 146px;
-    text-align: center; }
-
-.menu a {
-  cursor: pointer;
-  color: #353535;
-  font-size: 14px;
-  transition: 0.3s;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  position: relative; }
-  .menu a:hover {
-    color: #FAA500;
-    font-weight: 700;
-    text-decoration: none; }
-  .menu a:hover:before {
-    content: "";
-    display: block;
-    background-image: url(../img/btnicon.png);
-    width: 15px;
-    height: 17px;
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 16px;
-    top: 50%;
-    transform: translatey(-50%); }
-
-/*fullbanner*/
-.banner {
-  position: relative; }
-  .banner img {
-    width: 100%;
-    height: auto;
-    max-width: 1920px; }
-  .banner .slick-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%) rotate(45deg);
-    border: 6px solid #353535;
-    background: transparent;
-    font-size: 0;
-    width: 22px;
-    height: 22px;
-    border-radius: 1px; }
-  .banner .slick-next {
-    right: 161px;
-    border-bottom: none;
-    border-left: none; }
-  .banner .slick-prev {
-    left: 161px;
-    z-index: 1;
-    border-right: none;
-    border-top: none; }
-  .banner .slick-dots {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    bottom: 21px;
-    left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    margin: 0;
-    padding: 0; }
-    .banner .slick-dots li button {
-      border-radius: 50%;
-      background: transparent;
-      width: 16px;
-      height: 16px;
-      margin: 0 8px;
-      font-size: 0;
-      border: 2px solid #FAA500;
-      transition: 0.3s; }
-      .banner .slick-dots li button:hover {
-        background: #FAA500; }
-
-/*
-$my-color-1: #00A1FF;
-$my-color-2: #E2711D;
-$my-color-3: #FFCD8A;
-$my-color-4: #FFB627;
-$my-color-5: #E65F5C;
-$theme-colors:( "my-color-1": $my-color-1, "my-color-2": $my-color-2, "my-color-3": $my-color-3, "my-color-4": $my-color-4, "my-color-5": $my-color-5);
-
-$link-color: $my-color-5;
-
-.size-auto,
-.size-full,
-.size-large,
-.size-medium,
-.size-thumbnail {
-    max-width: 100%;
-    height: auto;
-}
-*/
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
 :root {
   --blue: #007bff;
   --indigo: #6610f2;
@@ -7369,3 +7186,264 @@ a.text-dark:hover, a.text-dark:focus {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
+
+.max-container {
+  width: 85%;
+  max-width: 1600px;
+  margin: 0 auto; }
+
+body {
+  font-family: Titillium Web;
+  background: white; }
+
+.content {
+  background: #fafafa; }
+
+/*TOPBAR*/
+.main-topbar {
+  background: #353535;
+  box-shadow: none; }
+  .main-topbar span {
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    line-height: 24px; }
+
+/*header*/
+header {
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  background: white; }
+
+.main-head {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
+
+.container-logo {
+  padding: 35px 0;
+  box-sizing: border-box;
+  margin-right: 117px; }
+
+.search {
+  width: 100%;
+  max-width: 791px;
+  position: relative; }
+  .search input {
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    background: #EFEFEF;
+    line-height: 40px;
+    padding: 0 202px 0 24px; }
+  .search button {
+    position: absolute;
+    right: 0;
+    width: 100%;
+    max-width: 119px;
+    background: #FAA500;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    color: white;
+    font-size: 14px; }
+
+.container-profile {
+  margin-left: 143px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 428px; }
+  .container-profile a {
+    margin-right: 39px;
+    line-height: 21px; }
+    .container-profile a span {
+      color: #353535;
+      font-size: 14px; }
+    .container-profile a img {
+      margin-right: 8px; }
+  .container-profile .carrinho {
+    padding: 12px;
+    border: 1px solid #FAA500;
+    box-sizing: border-box;
+    margin-right: 0;
+    border-radius: 8px; }
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 177px;
+  margin-bottom: 0; }
+  .menu ul li {
+    width: 100%;
+    max-width: 146px;
+    text-align: center; }
+
+.menu a {
+  cursor: pointer;
+  color: #353535;
+  font-size: 14px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: relative; }
+  .menu a:hover {
+    color: #FAA500;
+    font-weight: 700;
+    text-decoration: none; }
+  .menu a:hover:before {
+    content: "";
+    display: block;
+    background-image: url(../img/btnicon.png);
+    width: 15px;
+    height: 17px;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translatey(-50%); }
+
+/*fullbanner*/
+.banner {
+  position: relative; }
+  .banner img {
+    width: 100%;
+    height: auto; }
+  .banner .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border: 6px solid #353535;
+    background: transparent;
+    font-size: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 1px; }
+  .banner .slick-next {
+    right: calc(0% + 160px);
+    border-bottom: none;
+    border-left: none; }
+  .banner .slick-prev {
+    left: calc(0% + 160px);
+    z-index: 1;
+    border-right: none;
+    border-top: none; }
+  .banner .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: 0;
+    padding: 0; }
+    .banner .slick-dots li button {
+      border-radius: 50%;
+      background: transparent;
+      width: 16px;
+      height: 16px;
+      margin: 0 8px;
+      font-size: 0;
+      border: 2px solid #FAA500;
+      transition: 0.3s; }
+      .banner .slick-dots li button:hover {
+        background: #FAA500; }
+    .banner .slick-dots li.slick-active button {
+      background: #FAA500; }
+
+/*icons*/
+.icons-1 header {
+  background: #fafafa;
+  box-shadow: none; }
+  .icons-1 header h2 {
+    margin: 21px auto;
+    font-size: 16px;
+    font-weight: 700;
+    color: #353535;
+    line-height: 24.34px;
+    text-align: center; }
+
+.icons-1 figure {
+  margin: 0;
+  display: flex; }
+  .icons-1 figure img {
+    width: 32px;
+    height: 32px; }
+  .icons-1 figure figcaption {
+    margin: 0; }
+    .icons-1 figure figcaption p {
+      display: flex;
+      flex-direction: column;
+      margin: 0; }
+      .icons-1 figure figcaption p strong {
+        line-height: 21.29px; }
+      .icons-1 figure figcaption p span {
+        line-height: 18.25px; }
+
+.icons-1 ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 0;
+  margin: 0; }
+  .icons-1 ul li {
+    width: 100%;
+    max-width: 307px;
+    background: #EFEFEF;
+    padding: 16px 27px;
+    box-sizing: border-box;
+    border-radius: 4px; }
+
+.icons-2 header {
+  box-shadow: none;
+  background: #fafafa; }
+  .icons-2 header h3 {
+    font-size: 32px;
+    font-weight: 700;
+    text-align: center;
+    margin: 32px auto;
+    line-height: 48.67px;
+    color: #353535; }
+
+.icons-2 figure {
+  margin: 0; }
+
+.icons-2 ul {
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 0;
+  margin: 0; }
+  .icons-2 ul img {
+    width: 100%;
+    max-width: 307px; }
+
+/*
+$my-color-1: #00A1FF;
+$my-color-2: #E2711D;
+$my-color-3: #FFCD8A;
+$my-color-4: #FFB627;
+$my-color-5: #E65F5C;
+$theme-colors:( "my-color-1": $my-color-1, "my-color-2": $my-color-2, "my-color-3": $my-color-3, "my-color-4": $my-color-4, "my-color-5": $my-color-5);
+
+$link-color: $my-color-5;
+
+.size-auto,
+.size-full,
+.size-large,
+.size-medium,
+.size-thumbnail {
+    max-width: 100%;
+    height: auto;
+}
+*/

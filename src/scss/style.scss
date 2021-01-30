@@ -1,3 +1,6 @@
+// importa o Bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
 .max-container {
     width: 85%;
     max-width: 1600px;
@@ -6,6 +9,11 @@
 
 body {
     font-family: Titillium Web;
+    background: white;
+}
+
+.content {
+    background: #fafafa;
 }
 
 
@@ -13,6 +21,7 @@ body {
 
 .main-topbar {
     background: #353535;
+    box-shadow: none;
     span {
         color: white;
         width: 100%;
@@ -29,6 +38,7 @@ body {
 
 header {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+    background: white;
 }
 
 .main-head {
@@ -42,7 +52,6 @@ header {
     padding: 35px 0;
     box-sizing: border-box;
     margin-right: 117px;
-    img {}
 }
 
 .search {
@@ -103,7 +112,7 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 14px 225px;
+        padding: 14px 177px;
         margin-bottom: 0;
         li {
             width: 100%;
@@ -148,7 +157,6 @@ header {
     img {
         width: 100%;
         height: auto;
-        max-width: 1920px;
     }
     .slick-arrow {
         position: absolute;
@@ -162,12 +170,12 @@ header {
         border-radius: 1px;
     }
     .slick-next {
-        right: 161px;
+        right: calc(0% + 160px);
         border-bottom: none;
         border-left: none;
     }
     .slick-prev {
-        left: 161px;
+        left: calc(0% + 160px);
         z-index: 1;
         border-right: none;
         border-top: none;
@@ -183,18 +191,109 @@ header {
         z-index: 1;
         margin: 0;
         padding: 0;
-        li button {
-            border-radius: 50%;
-            background: transparent;
-            width: 16px;
-            height: 16px;
-            margin: 0 8px;
-            font-size: 0;
-            border: 2px solid #FAA500;
-            transition: 0.3s;
-            &:hover {
-                background: #FAA500;
+        li {
+            button {
+                border-radius: 50%;
+                background: transparent;
+                width: 16px;
+                height: 16px;
+                margin: 0 8px;
+                font-size: 0;
+                border: 2px solid #FAA500;
+                transition: 0.3s;
+                &:hover {
+                    background: #FAA500;
+                }
             }
+        }
+        li.slick-active button {
+            background: #FAA500;
+        }
+    }
+}
+
+
+/*icons*/
+
+.icons-1 {
+    header {
+        background: #fafafa;
+        box-shadow: none;
+        h2 {
+            margin: 21px auto;
+            font-size: 16px;
+            font-weight: 700;
+            color: #353535;
+            line-height: 24.34px;
+            text-align: center;
+        }
+    }
+    figure {
+        margin: 0;
+        display: flex;
+        img {
+            width: 32px;
+            height: 32px;
+        }
+        figcaption {
+            margin: 0;
+            p {
+                display: flex;
+                flex-direction: column;
+                margin: 0;
+                strong {
+                    line-height: 21.29px;
+                }
+                span {
+                    line-height: 18.25px;
+                }
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 16px;
+        padding: 0;
+        margin: 0;
+        li {
+            width: 100%;
+            max-width: 307px;
+            background: #EFEFEF;
+            padding: 16px 27px;
+            box-sizing: border-box;
+            border-radius: 4px;
+        }
+    }
+}
+
+.icons-2 {
+    header {
+        box-shadow: none;
+        background: #fafafa;
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            text-align: center;
+            margin: 32px auto;
+            line-height: 48.67px;
+            color: #353535;
+        }
+    }
+    figure {
+        margin: 0;
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 16px;
+        padding: 0;
+        margin: 0;
+        img {
+            width: 100%;
+            max-width: 307px;
         }
     }
 }
@@ -219,6 +318,3 @@ $link-color: $my-color-5;
     height: auto;
 }
 */
-
-// importa o Bootstrap
-@import "node_modules/bootstrap/scss/bootstrap";
