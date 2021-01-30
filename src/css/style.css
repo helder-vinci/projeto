@@ -82,7 +82,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 14px 225px; }
+  padding: 14px 225px;
+  margin-bottom: 0; }
   .menu ul li {
     width: 100%;
     max-width: 146px;
@@ -114,13 +115,53 @@ header {
     transform: translatey(-50%); }
 
 /*fullbanner*/
-.banner img {
-  width: 100%;
-  height: auto;
-  max-width: 1920px; }
-
-figure {
-  margin: 0 !important; }
+.banner {
+  position: relative; }
+  .banner img {
+    width: 100%;
+    height: auto;
+    max-width: 1920px; }
+  .banner .slick-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    border: 6px solid #353535;
+    background: transparent;
+    font-size: 0;
+    width: 22px;
+    height: 22px;
+    border-radius: 1px; }
+  .banner .slick-next {
+    right: 161px;
+    border-bottom: none;
+    border-left: none; }
+  .banner .slick-prev {
+    left: 161px;
+    z-index: 1;
+    border-right: none;
+    border-top: none; }
+  .banner .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: 21px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    margin: 0;
+    padding: 0; }
+    .banner .slick-dots li button {
+      border-radius: 50%;
+      background: transparent;
+      width: 16px;
+      height: 16px;
+      margin: 0 8px;
+      font-size: 0;
+      border: 2px solid #FAA500;
+      transition: 0.3s; }
+      .banner .slick-dots li button:hover {
+        background: #FAA500; }
 
 /*
 $my-color-1: #00A1FF;
