@@ -7,6 +7,11 @@ $( document ).ready(function() {
         slidesToShow: 1,
         dots:true
       });
+      $('.banner-mobile').slick({
+        infinite: true,
+        slidesToShow: 1,
+        dots:true
+      });
       $('.vitrine article > ul').slick({
         infinite: true,
         slidesToShow: 5,
@@ -109,4 +114,12 @@ $( document ).ready(function() {
         $('.modal-bg').hide();
         $('.modal').hide();
       })
+
+   
+        $(".footer-item").click(function () {
+           
+            // $(".tab").addClass("active"); // instead of this do the below 
+            $(this).toggleClass("active");   
+        });
+        
   });
