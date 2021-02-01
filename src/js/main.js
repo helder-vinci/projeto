@@ -9,7 +9,32 @@ $( document ).ready(function() {
       });
       $('.vitrine article > ul').slick({
         infinite: true,
-        slidesToShow: 5
+        slidesToShow: 5,
+        responsive: [
+          {
+            breakpoint: 1600,
+            settings: {
+              slidesToShow: 4,
+              
+              infinite: true,
+              
+            }
+            
+          },{
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 3,
+              
+              infinite: true,
+              
+            }},{
+              breakpoint: 991,
+              settings: {
+                slidesToShow: 1,
+                
+                infinite: true,
+                
+              }}]
       });
       $('.icons-1 article >ul').slick({
         infinite: true,
@@ -22,7 +47,7 @@ $( document ).ready(function() {
             breakpoint: 1800,
             settings: {
               slidesToShow: 3,
-              centerMode: true,
+              
               infinite: true,
               
             }
@@ -31,7 +56,7 @@ $( document ).ready(function() {
             breakpoint: 1220,
             settings: {
               slidesToShow: 2,
-              centerMode: true,
+              
               infinite: true,
               
             }
@@ -40,7 +65,7 @@ $( document ).ready(function() {
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
-              centerMode: true,
+             
               infinite: true,
               
             }
@@ -57,7 +82,7 @@ $( document ).ready(function() {
             breakpoint: 1800,
             settings: {
               slidesToShow: 3,
-              centerMode: true,
+              
               infinite: true,
               
             }
@@ -66,7 +91,7 @@ $( document ).ready(function() {
             breakpoint: 1220,
             settings: {
               slidesToShow: 2,
-              centerMode: true,
+              
               infinite: true,
               
             }
@@ -74,7 +99,7 @@ $( document ).ready(function() {
             breakpoint: 768,
             settings: {
               slidesToShow: 1,
-              centerMode: true,
+              
               infinite: true,
               
             }
