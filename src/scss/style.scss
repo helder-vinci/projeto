@@ -13,7 +13,10 @@
 
 body {
     font-family: Titillium Web;
-    background: white;
+    background: #fafafa;
+    @media (max-width: 991px) {
+        background: #fff;
+    }
 }
 
 .content {
@@ -419,7 +422,7 @@ header {
         }
     }
     .slick-dots {
-        bottom: 129px;
+        bottom: 32px;
     }
     img {
         width: 100%;

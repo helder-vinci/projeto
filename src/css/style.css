@@ -7198,7 +7198,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 body {
   font-family: Titillium Web;
-  background: white; }
+  background: #fafafa; }
+  @media (max-width: 991px) {
+    body {
+      background: #fff; } }
 
 .content {
   background: #fafafa; }
@@ -7538,7 +7541,7 @@ header {
       line-height: 28px;
       font-size: 14px; }
   .banner-mobile .slick-dots {
-    bottom: 129px; }
+    bottom: 32px; }
   .banner-mobile img {
     width: 100%;
     height: auto; }
